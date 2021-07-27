@@ -5,7 +5,7 @@ from django.contrib.auth.models import Group
 from django.contrib.auth.admin import UserAdmin
 
 from usermanager.forms import MallocUserCreateForm, MallocChangeForm
-from usermanager.models import MallocBaseUser
+from usermanager.models import MallocBaseUser, PortfolioUserManager, ContactInfoUser
 
 admin.site.unregister(Group)
 
@@ -31,3 +31,5 @@ admin.site.unregister(Group)
 
 
 admin.site.register(MallocBaseUser)
+admin.site.register(PortfolioUserManager)
+admin.site.register(ContactInfoUser)
